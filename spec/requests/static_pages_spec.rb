@@ -20,7 +20,7 @@ describe "Static pages" do
 		  visit '/static_pages/help'
 		  page.should have_content('Help')
 		end
-	  it "shoould have the title 'Help'" do
+	  it "should have the title 'Help'" do
 		  visit '/static_pages/help'
 		  page.should have_selector('title',
 					   :text => "Ruby on Rails Tutorial Sample App | Help")
